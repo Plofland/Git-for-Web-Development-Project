@@ -1,5 +1,5 @@
 Finished CodePen 
-https://codepen.io/plofland/pen/mdEmNxQ?editors=1100
+https://codepen.io/plofland/full/mdEmNxQ
 
 1. What is Semantic HTML? 
 
@@ -32,7 +32,7 @@ https://codepen.io/plofland/pen/mdEmNxQ?editors=1100
 
 8. What elements can I add an id to? 
 
-    
+
 
 9. How many times can I use the same id on a page? 
 
