@@ -11,11 +11,11 @@ https://codepen.io/plofland/full/mdEmNxQ
 
 3. What is an attribute and where do we put it? 
 
-    An attribute is 
+    An attribute provides additional info for an element and we place it in the opening tag.
 
 4. What is the h1 tag used for? How many times should I use it on a page?
 
-    The h1 tag is used for the main headline or title. In terms of heirarchy, it is the most important heading. 
+    The h1 tag is used for the main headline or title. In terms of heirarchy, h1 is the most important heading and h6 is the least. 
 
 5. Name two tags that have required attributes
 
@@ -32,144 +32,181 @@ https://codepen.io/plofland/full/mdEmNxQ
 
 8. What elements can I add an id to? 
 
-
+    You can id's to stand alone elements where there is only one of that specific element.
 
 9. How many times can I use the same id on a page? 
 
-
+    Once.
 
 10. What is a class? 
 
-
+    A class identifies multiple elements so that it can be called in styling or javascript.
 
 11. What elements can I add a class to? 
 
-
+    Sections, articles, lists, images, divs, spans, buttons, inputs, etc. 
 
 12. How many times can I use the same class on a page? 
 
-
+    As many times as you'd like.
 
 13. How do I get my link to open in a new tab?
 
-
+    Somewhere in the opening tag of the anchor tag, put: target="_blank"
 
 14. What is the alt attribute in the image tag used for? 
 
-
+    It makes the image accessible for the visually impaired and for search optimization.
 
 15. How do I reference an id?
 
-
+    In a .css file or in the styling section of the HTML document, type out: #idName {properies: value;} 
 
 16. What is the difference between a section and a div
 
-
+    Div's are block display and span's are inline.
 
 17. What is CSS used for? 
 
-
+    Cascading Style Sheets are used to stylize a webpage.
 
 18. How to we select an element? Example - every h2 on the page
 
-
+    In the .css file or in the styling section of the HTML document, type out: h2 {property: value;} to select the element and make changes.
 
 19. What is the difference between a class and an id? - Give me an example of when I might use each one
 
-
+    Id is used to identify only one element in the HTML and class can be used to identify several elements in the HTML.
 
 20. How do we select classes in CSS?
 
-
+    In the .css file or in the styling section of the HTML document, type out: .className {property: value;} to select the element/elements and make changes.
 
 21. How do we select a p element with a single class of “human””?
 
-
+    In the .css file or in the styling section of the HTML document, type out: .human p {property: value;}
 
 22. What is a parent child selector? When would this be useful? 
 
-
+    Parent child selector is nesting elements within elements. It is useful for staying organized and making changes to entire sections.
 
 23. How do you select all links within a div with the class of sidebar?
 
-
+    In the .css file or in the styling section of the HTML document, type out: div.sidebar {property: value;}
 
 24. What is a pseudo selector?
 
-
+    A pseudo selector is used for specific states of an element. Examples of this would be when the mouse hovers over an element or when links change color when they are clicked.
 
 25. What do we use the change the spacing between lines?
 
-
+    Assuming the element with lines is a p element:
+    p {
+        line-height: whateverValueYouWant;
+    }
 
 26. What do we use to change the spacing between letters?
 
-
+Assuming the element with lines is a p element:
+    p {
+        letter-spacing: whateverValueYouWant;
+    }
 
 27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
 
-
+Assuming the element with lines is a p element:
+    p {
+        text-transform: uppercase/lowercase/capitalize;
+    }
 
 28. How do I add a 1px border around my div that is dotted and black?
 
-
+    div {
+        border: 1px dotted black;
+    }
 
 29. How do I select everything on the page? 
 
-
+    *{
+        property: value;
+    }
 
 30. How do I write a comment in CSS?
 
-
+    /* Comment goes here */
 
 31. How do I find out what file I am in, when I am using the command line? 
 
-
+    pwd
 
 32. Using the command line - how do I see a list of files/folders in my current folder?
 
-
+    ls
 
 33. How do I remove a file via the command line? Why do I have to be careful with this?
 
-
+    rm fileName     This is dangerous because it is permanently deleted.
 
 34. Why should I use version control? 
 
-
+    Version control is a way to make changes to code without altering the main project's (main branch) functionality.
 
 35. How often should I commit to github?
 
-
+    Whenever progress is made, a task is completed, or every 20min or so.
 
 36. What is the command we would use to push our repo up to github?
 
-
+    It is a way to navigate your computer without a GUI. It gives the user more control over their directories.
 
 37. Walk me through Lambda's git flow. 
 
-
+    -Fork the repository you would like to do work for
+    -"Clone or download" the repo to get the clone link
+    -In the command line, use cd to change directories until you are in the folder you'd like to put the repo into
+    -Type: git clone (clone url link)
+    -Change directory (cd) into the newly created repo
+    -Create your own branch for the repo by typing: git checkout -b "firstName-lastName"
+    -Work on the repo
+    -Add changes to the repo with: git add .
+    -Commit changes with: git commit -m "Write a useful comment here of what was changed/accomplished"
+    -Add & commit often as progress is made
+    -Once the task is complete, push the changes back to your GitHub repo by typing: git push -u origin branch-name(firstName-lastName from earlier)
+    -Next is to submit a pull request on the GitHub site
+    -Go to the forked copy of the repo
+    -Change the branch from master/main to your name
+    -Click the "pull request" buttons
+    -Once redirected to a pull request page, click the "base repository" drop-down menu
+    -Select your forked repo and not the original repo
+    -Write out any necessary notes
+    -Click on the "Create pull request" button
 
 
 Stretch Questions
 
 1. What is the difference between an inline element and a block element?
 
-
+    Inline is column oriented and block is row oriented.
 
 2. What happens when an element is positioned absolutely? 
 
-
+    The element will be placed above all other element on the z-axis. This will act as if there are no other elements around it.
 
 3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
 
-
+    Select the element and change the display to inline-block. 
+    element {
+        display: inline-block;
+    }
 
 
 4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
 
-
+    display block: div's, lists, h1-h6 
+    display inline: span's, anchor links
+    display inline-block: images
 
 5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
 
-
+    The box model is the foundation of CSS. Every element is a box and can be manipulated by changing the value of it's properies. But after declaring sizing, the default box model will add borders and padding on top of the element which may cause elements to overlap or break the flow of the layout.
+    The solution to this would be to use the box-sizing property and set the value to border-box. This property will include the padding and border in the element's total given height/width.
